@@ -1,0 +1,71 @@
+body {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 1%;
+    background-color: #ffccd5;}
+    h2 {
+        margin: 0;
+        padding: 0;
+        color: #800f2f
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }   
+    .left-column {
+        flex-direction: column;
+        width: 50%;
+    }
+    .right-column {
+        flex-direction: column;
+        width: 50%;
+        padding: 2%;
+    }
+    .img1 {
+        border-radius: 40px;
+        text-align: center;
+        width: 30%;
+        height: 20%;
+        margin-left: 40%;
+    }
+    header {
+        border-radius: 8px;
+        background: #ffb3c1;
+        color: #800f2f;
+        text-align: center;
+    }
+    section {
+        background: #ffb3c1;
+        margin: 2%;
+        margin-bottom: 4%;
+        padding: 2%;
+        border-radius: 8px;
+        color: #800f2f
+    }
+    footer {
+        border-radius: 8px;
+        background: #ffb3c1;
+        color: #800f2f;
+        text-align: center;
+    }
+    table {
+        border: 1px;
+        background-color: #ffb3c1;
+        border-color: #800f2f;
+        width: 70%;
+        margin: 20px auto;
+        td, th {
+            color: #800f2f;
+            border: 3px solid #ffccd5;
+            padding: 2.2%;
+        }
+    }
+    .img2 {
+        border-radius: 40px;
+        text-align: center;
+        width: 60%;
+        height: 20%;
+        margin-left: 20%;}
+    a {color:#bb5471}

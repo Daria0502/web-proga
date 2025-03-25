@@ -1,9 +1,10 @@
-body {
+    body {
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
     line-height: 1.5;
     margin: 0;
     padding: 1%;
-    background-color: #ffccd5;}
+    background-color: #ffccd5;
+    }
     h2 {
         margin: 0;
         padding: 0;
@@ -17,6 +18,7 @@ body {
     .left-column {
         flex-direction: column;
         width: 50%;
+        padding: 2%;
     }
     .right-column {
         flex-direction: column;
@@ -24,11 +26,11 @@ body {
         padding: 2%;
     }
     .img1 {
-        border-radius: 40px;
+        border-radius: 10%;
         text-align: center;
         width: 30%;
         height: 20%;
-        margin-left: 40%;
+        margin-left: 35%;
     }
     header {
         border-radius: 8px;
@@ -45,6 +47,7 @@ body {
         color: #800f2f
     }
     footer {
+        margin: 5%;
         border-radius: 8px;
         background: #ffb3c1;
         color: #800f2f;
@@ -63,9 +66,95 @@ body {
         }
     }
     .img2 {
-        border-radius: 40px;
+        border-radius: 10%;
         text-align: center;
         width: 60%;
         height: 20%;
         margin-left: 20%;}
     a {color:#bb5471}
+
+    /* Медиазапросы для мобильных устройств */
+@media (max-width:599px) {
+    body {
+        padding: 0;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .left-column, .right-column {
+        width: 100%;
+    }
+    .img1, .img2 {
+        width: 80%; 
+        margin-left: 10%; 
+    }
+    table {
+        width: 90%; 
+    }
+    section {
+        margin: 2% 0; 
+    }
+    .footer{
+        margin: 5%;
+        grid-template-columns: 1fr;
+    }}
+    @media (min-width: 600px) and (max-width: 840px) {
+        .wrapper {
+            flex-wrap: wrap;
+        }
+        .left-column, .right-column {
+            width: 100%;
+        }
+        .img1, .img2 {
+            width: 80%;
+            height: 30%;
+            margin-left: 5%;
+        }
+        table {
+            width: 95%;
+        }
+        section {
+            margin: 2% 0;
+        }
+        footer {
+            margin: 5%;
+        }
+    }
+    /* Медиазапросы для iPhone */
+@media (max-width:480px) {
+    .img1, .img2 {
+        width: 55%; 
+        margin-left: 20%; 
+    }
+    table {
+        width: 98%; 
+    }
+    footer{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:720px) {
+    .img1, .img2 {
+        width: 60%; 
+        margin-left: 20%; 
+    }
+    table {
+        width: 98%; 
+    }
+    footer{
+        margin-top: 5%;
+    }
+}
+@media (max-width:840px) {
+    .img1, .img2 {
+        width: 60%; 
+        margin-left: 27%; 
+        text-align: center;
+    }
+    table {
+        width: 98%; 
+    }
+    footer{
+        margin: 5%;
+    }
+}
